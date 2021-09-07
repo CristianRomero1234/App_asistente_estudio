@@ -7,21 +7,22 @@ Pensada para ofrecer un ambiente de trabajo, basado en las apps de Google, a est
 Para estudiantes de web development, este proyecto sirve para motivar el aprendizaje y la optimización de proyectos, ya que al ser solo el Front-End, se pudiesen buscar 
 soluciones de escalabilidad, además de la gran cantidad de mejoras que pueden ser aplicadas al propio Front-End.
 
-Este proyecto puede ser utilizado para practicar la teoría básica de HTML, CSS y JS.
+##Este proyecto puede ser utilizado para practicar la teoría básica de HTML, CSS y JS.
 --------------------------------------------------------------------------------------------------------------------------------------------
 Instrucciones (21:34:40-UTC+2): 
 1)Abrir una carpeta para alojar la app. Ejemplo:"App_Asistente_Estudios"
 
 2)Abrir un archivo index.html.
   2.1) Iniciar Archivo de html. 
-                               Ejemplo:"App_Asistente_Estudios/index.html"
-                               '''html
-			       <!DOCTYPE html>
-                               <html lang="en">
-                               <head>
-                               <meta charset="UTF-8">
-                               <title>App Asistente Estudios</title> 
-                               '''
+[Ejemplo:"App_Asistente_Estudios/index.html"
+'''
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>App Asistente Estudios</title> 
+'''
 
   2.2) Iniciar un Archivo de CSS y llamarlo en el documento html. 
                                Ejemplo:"App_Asistente_Estudios/estilo.css"
@@ -30,9 +31,12 @@ Instrucciones (21:34:40-UTC+2):
                                ]
                                  
  3) Agregar un <header> en el documento, para pasar un banner superior y colocar el titulo que se mostrara al usuario. 
-                              Ejemplo: <header>
-                                           <div><h1>Titulo que se muestra al usuario</h1></div>
-                                       </header>
+                              Ejemplo: 
+	'''
+	<header>
+        	div><h1>Titulo que se muestra al usuario</h1></div>
+        </header>
+	'''
                               [ <header>
                                       <div type="banner_Superior"><h1 style="font-family: Arial, Helvetica, sans-serif;color:white;background-color: rgb(3, 85, 30);">Asistente de Estudios</h1></div>
                                 </header>
