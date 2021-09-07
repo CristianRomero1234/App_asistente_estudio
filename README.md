@@ -15,12 +15,13 @@ Instrucciones (21:34:40-UTC+2):
 2)Abrir un archivo index.html.
   2.1) Iniciar Archivo de html. 
                                Ejemplo:"App_Asistente_Estudios/index.html"
-                               [ <!DOCTYPE html>
-                                 <html lang="en">
-                                 <head>
-                                      <meta charset="UTF-8">
-                                      <title>App Asistente Estudios</title> 
-                               ]
+                               '''html
+			       <!DOCTYPE html>
+                               <html lang="en">
+                               <head>
+                               <meta charset="UTF-8">
+                               <title>App Asistente Estudios</title> 
+                               '''
 
   2.2) Iniciar un Archivo de CSS y llamarlo en el documento html. 
                                Ejemplo:"App_Asistente_Estudios/estilo.css"
