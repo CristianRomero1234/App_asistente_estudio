@@ -9,6 +9,8 @@ soluciones de escalabilidad, además de la gran cantidad de mejoras que pueden s
 
 Este proyecto puede ser utilizado para practicar la teoría básica de HTML, CSS y JS.
 --------------------------------------------------------------------------------------------------------------------------------------------
+
+##Pre requisitos: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web
 ## Instrucciones (6/9/2021-21:34:40-UTC+2): 
 
 1)Abrir una carpeta para alojar la app. Ejemplo:**"App_Asistente_Estudios"**
