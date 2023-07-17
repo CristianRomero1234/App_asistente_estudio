@@ -40,7 +40,7 @@
 		teareaInput.setAttribute("placeholder", "Agrega tu tarea");
 	};
 
-	var eleminarTarea = function(){
+	var eliminarTarea = function(){
 		this.parentNode.removeChild(this);
 	};
 
@@ -54,6 +54,6 @@
 
 	// Borrando Elementos de la lista
 	for (var i = 0; i <= lista.children.length -1; i++) {
-		lista.children[i].addEventListener("click", eleminarTarea);
+		lista.children[i].addEventListener("click", eliminarTarea);
 	}
 }());

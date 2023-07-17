@@ -1,7 +1,10 @@
 div {
-    background-color: lightgrey;
-    width: 70%;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-  }
+  background-color: lightgrey;
+  width: 70%;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+.error{
+  border-color: red;
+}
