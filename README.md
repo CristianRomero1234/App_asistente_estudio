@@ -267,3 +267,23 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
 
 </html>
 ``` 
+At this point we have the basic structure of our web page that so far only makes use of HTML and Bootstrap v5.3.1,
+
+But we also know the is just a scaffold, and we're set for few more hours of work and learning.
+
+Stop at this point. 
+
+Do not go beyond this point until you've had at least a 6-hour timespan of being offline.
+
+But please, make sure you understand what we have right now, and investigate the topics that spark doubts.
+
+---
+
+Now we will focus on functionality.
+
+---
+
+First, we will link to google docs (search for Google Docs anchor tag and add the href attribut pointing to "https://docs.google.com/")
+
+`...   <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li> ...`
+
