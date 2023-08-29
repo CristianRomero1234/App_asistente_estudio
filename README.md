@@ -411,3 +411,126 @@ We will use the `<script>` HTML tag.
 
 We will start with a basic "notepad" implementation.
 
+For this we will use <textarea> along some buttons (for which we will add functionality later on).
+
+Compare your code with the following and update it accordingly
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the lista de objetivos lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form>
+                        <button>B</button><button>I</button><button>_</button> <button>Save</button> <button>Download to file</button>
+                        <textarea>Some text...</textarea>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+```
