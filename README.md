@@ -219,19 +219,18 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
             </ul>
         </section>
     </nav>
-    <!--Accordion-->
     <section class="accordion" id="accordionExample">
         <section class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
+                   Pomodoro Counter
                 </button>
             </h2>
             <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <section class="accordion-body">
-                    Body Accordion 1
+                   This is where the  pomodoro counter lives
                 </section>
             </section>
         </section>
@@ -239,13 +238,13 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
             <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
+                   Lista de Objetivos
                 </button>
             </h2>
             <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <section class="accordion-body">
-                    Body Accordion 2
+                    This is where the  lista de objetivos lives
                 </section>
             </section>
         </section>
@@ -253,13 +252,13 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
             <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
+                   Your Custom HTML Notepad
                 </button>
             </h2>
             <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <section class="accordion-body">
-                    Body Accordion 2
+                    This is where the  pomodoro counter lives
                 </section>
             </section>
         </section>
@@ -267,5 +266,4 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
 </body>
 
 </html>
-
 ``` 
