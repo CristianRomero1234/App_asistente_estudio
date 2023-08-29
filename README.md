@@ -411,7 +411,7 @@ We will use the `<script>` HTML tag.
 
 We will start with a basic "notepad" implementation.
 
-For this we will use <textarea> along some buttons (for which we will add functionality later on).
+For this we will use <fieldset> along some buttons (for which we will add functionality later on).
 
 Compare your code with the following and update it accordingly
 
