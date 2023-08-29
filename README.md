@@ -521,10 +521,43 @@ Compare your code with the following and update it accordingly
             <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <section class="accordion-body">
-                    <form>
-                        <button>B</button><button>I</button><button>_</button> <button>Save</button> <button>Download to file</button>
-                        <textarea>Some text...</textarea>
+                    <form style="padding: 5px;">
+
+
+                        <fieldset >
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
                     </form>
+                    <br>
+
                 </section>
             </section>
         </section>
@@ -533,4 +566,4 @@ Compare your code with the following and update it accordingly
 
 </html>
 
-```
+``` 

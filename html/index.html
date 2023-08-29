@@ -103,23 +103,42 @@
                 data-bs-parent="#accordionExample">
                 <section class="accordion-body">
                     <form style="padding: 5px;">
-                        <section class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                            <button type="button" class="btn btn-light">B</button>
-                            <button type="button" class="btn btn-light">I</button>
-                            <button type="button" class="btn btn-light">_</button>
-                          
+
+
+                        <fieldset >
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
                             <section class="btn-group" role="group">
-                              <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                               Save
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                <li><a class="dropdown-item" href="#">Download file</a></li>
-                                <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
-                              </ul>
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
                             </section>
-                          </section>
-                        <textarea style="margin:2px;">Some text...</textarea>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
                     </form>
+                    <br>
+
                 </section>
             </section>
         </section>
