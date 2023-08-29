@@ -283,7 +283,12 @@ Now we will focus on functionality.
 
 ---
 
-First, we will link to google docs (search for Google Docs anchor tag and add the href attribut pointing to "https://docs.google.com/")
+First, we will link to google docs (search for Google Docs anchor tag in you file index.html and add the href attribute pointing to "https://docs.google.com/")
 
 `...   <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li> ...`
 
+---
+
+Then, we will link to an online pdf editor in our case: https://openpdf.com/lp/edit-pdf.html
+(search for Online PDF editor< anchor tag in you file index.html and add the href attribute pointing to "https://openpdf.com/lp/edit-pdf.html")
+`... <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a></li> ...`
