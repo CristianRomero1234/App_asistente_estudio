@@ -401,19 +401,14 @@ We need to "connect" our links in the nav bar to our accordion, therefore we mus
 
 ---
 
-Now we will introduce Javascript. Is recommended but not required, to have read  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics_started_with_the_web
 
----
+We will restart by writing a basic "notepad" implementation.
 
-As stated before we will include at first everything inside our index.html file.
+For this we will use <fieldset> tag, along some buttons (for which we will add functionality later on).
 
-We will use the `<script>` HTML tag.
+Compare your code with the following and update it accordingly.
 
-We will start with a basic "notepad" implementation.
 
-For this we will use <fieldset> along some buttons (for which we will add functionality later on).
-
-Compare your code with the following and update it accordingly
 
 ```html
 
@@ -567,3 +562,371 @@ Compare your code with the following and update it accordingly
 </html>
 
 ``` 
+
+
+We only need to add functionality for the "save" feature, to consider the notepad as "completed". but for now we will stop here.
+
+Take a good rest (so far you have had to type many lines, enjoy being a programmer)
+
+---
+
+The next step is to create our "Lista de Objetivos", 
+
+A High-Level explanation: 
+
+- We will create a `<form>`, along one `<input>` and a button 
+
+Compare your code with the following and update accordingly.
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form>                
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
+
+
+                        <fieldset>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+```
+
+
+
+- We will show the "objetivos" once one has been created
+Compare your code with the following and update accordingly.
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body" id="listaObjetivos">
+                    <form>
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary" onclick="crearNuevoObjetivo()">Añadir</button>
+
+
+                        <script>
+
+                            let objetivos = [];
+                            let counter = 0;
+
+
+
+                            function crearNuevoObjetivo() {
+                                let nuevoObjetivo = document.createElement('p');
+                                nuevoObjetivo.innerText = inputObjetivos.value;
+                                nuevoObjetivo.style.margin = "5px";
+                                objetivos.push(nuevoObjetivo.innerText);
+                                nuevoObjetivo.id = counter;
+                                counter++;
+                                listaObjetivos.appendChild(nuevoObjetivo);
+                                inputObjetivos.value = "";
+                                nuevoObjetivo.addEventListener("click", () => {
+                                    listaObjetivos.removeChild(nuevoObjetivo)
+                                })
+                            }
+                        </script>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
+
+
+                        <fieldset>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+``` 
+---
+
+Now we will introduce Javascript. Is recommended but not required, to have read  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics_started_with_the_web
+
+As stated before we will include at first everything inside our index.html file.
+
+---

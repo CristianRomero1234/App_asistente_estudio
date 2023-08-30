@@ -87,8 +87,37 @@
             </h2>
             <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
-                <section class="accordion-body">
-                    This is where the lista de objetivos lives
+                <section class="accordion-body" id="listaObjetivos">
+                    <form>
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary" onclick="crearNuevoObjetivo()">Añadir</button>
+
+
+                        <script>
+
+                            let objetivos = [];
+                            let counter = 0;
+
+
+
+                            function crearNuevoObjetivo() {
+                                let nuevoObjetivo = document.createElement('p');
+                                nuevoObjetivo.innerText = inputObjetivos.value;
+                                nuevoObjetivo.style.margin = "5px";
+                                objetivos.push(nuevoObjetivo.innerText);
+                                nuevoObjetivo.id = counter;
+                                counter++;
+                                listaObjetivos.appendChild(nuevoObjetivo);
+                                inputObjetivos.value = "";
+                                nuevoObjetivo.addEventListener("click", () => {
+                                    listaObjetivos.removeChild(nuevoObjetivo)
+                                })
+                            }
+                        </script>
+                    </form>
                 </section>
             </section>
         </section>
@@ -105,7 +134,7 @@
                     <form style="padding: 5px;">
 
 
-                        <fieldset >
+                        <fieldset>
                             <button type="button" class="btn btn-light"
                                 onclick="document.execCommand('italic',false,null);"
                                 title="Italicize Highlighted Text"><i>I</i>
