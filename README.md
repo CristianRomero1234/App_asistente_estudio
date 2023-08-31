@@ -38,7 +38,9 @@ Let's jump in:
 ## Steps
 
 ### Step 1
+
 Write in index.html the basic "well-formed" scaffold.
+
 ---
 
     
