@@ -1,10 +1,6 @@
 #APP_ASISTENTE_ESTUDIOS_WEB_DEVELOPMENT_VERSION_2.0.BSv5
 
-Create three folders, name them "html, js, css".
-
-- Inside directory named html, create file "index.html"
-- Inside directory named js, create file "main.js"
-- Inside directory named css, create file "style.css"
+- Create HTML file named "index.html"
 
 if you want you could have you page on the internet. check in google "how to host html in google drive"
 
@@ -23,8 +19,8 @@ Make use of https://text-compare.com/ and/or https://onlinetextcompare.com/html 
 
 When comparing the code make sure to "iterate" at least 2 times. 
 
-1) compare your current code to the code provided on each step.
-2) compare the differences and make sure you understand before writing the new code to your program.
+1.  compare your current code to the code provided on each step.
+2.  compare the differences and make sure you understand before writing the new code to your program.
 
 Keys for completing this tutorial:
 
@@ -35,8 +31,10 @@ Keys for completing this tutorial:
 
 Let's jump in:
 
-Write in index.html the basic "well-formed" scaffold.
+## Steps
 
+### Step 1
+Write in index.html the basic "well-formed" scaffold.
 ---
 
 ```html
@@ -56,6 +54,9 @@ Write in index.html the basic "well-formed" scaffold.
 
 
 ```
+
+### Step 2
+
 As we will focus on learning Bootstrap, then let's include the CDNs for Bootstrap version 5 in our index.html file:
 
 ---
@@ -80,10 +81,12 @@ As we will focus on learning Bootstrap, then let's include the CDNs for Bootstra
 
 
 ```
-For the next step, we will create our "Navigation bar". 
-We will include links to google search, google calendar, also placeholder links "#" for other features of our web page.
-Notice the use of semantic HTML, other good practices are to include unique "id" attributes for each element inside <body>
 
+### Step 3
+
+We will create our "Navigation bar". 
+Include links to google search, google calendar, also placeholder links "#" for other features of our web page.
+Notice the use of semantic HTML on the example, other good practices are to include unique "id" attributes for each element inside <body>
 
 ---
 ```html
@@ -134,9 +137,13 @@ Notice the use of semantic HTML, other good practices are to include unique "id"
 </html>
 
 ```
-Let's change "Block de notas" and make it "Escribir", notice that we replaced the html class attribute for easing the process of writting the necessary CSS code to style a "dropdown menu" with options. (Bootstrap CDN, provides over the internet the CSS+JS code that help us use "Bootstrap Components")  
 
-In this way we can offer a variety of resources, that handle the writing and taking notes tasks (Including writing our own using HTML, CSS and JS).
+
+### Step 4
+
+Let's change "Block de notas", we will convert it to a menu, instead of a link, also change the text to "Escribir", notice that we replaced the html class attribute for easing the process of writting the CSS code to style a "dropdown menu" with options. (Bootstrap CDN, provides over the internet the CSS+JS code that help us use "Bootstrap Components")  
+
+In this way we can offer a variety of resources, that handle the writing and taking notes tasks (Including writing our own notepad using HTML, CSS and JS).
 
 ```html
 
@@ -192,6 +199,7 @@ In this way we can offer a variety of resources, that handle the writing and tak
 </html>
 
 ```
+
 Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML Notepad", are better suited to be displayed together but without interfering with one another, so we will append and an "Accordion" that help us with having our three features handy.
 
 ---
@@ -307,12 +315,15 @@ Continue here after the break:
 Now we will focus on adding more functionality.
 
 ---
+### Step 5
 
 First, find the text "Google Docs" inside of anchor tag, we will link to google docs (search for Google Docs anchor tag in you file index.html and add the href attribute pointing to "https://docs.google.com/")
 
 `...   <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li> ...`
 
 ---
+
+### Step 6
 
 Then, find the text "Online PDF editor" inside of anchor tag, we will link to an online pdf editor in our case: https://openpdf.com/lp/edit-pdf.html
 
@@ -321,6 +332,8 @@ Then, find the text "Online PDF editor" inside of anchor tag, we will link to an
 `... <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a></li> ...`
 
 ---
+
+### Step 7
 
 We need to "connect" our links in the nav bar to our accordion, therefore we must do the following changes to the code:
 
@@ -430,6 +443,7 @@ Note that we're basically making use of attributes like `data-bs-toggle, data-bs
 
 ---
 
+### Step 8
 
 Now, let's begin "our custom HTML Notepad" by writing a basic "notepad" implementation.
 
@@ -603,6 +617,9 @@ The next step is to create our "Lista de Objetivos",
 
 A High-Level explanation: 
 
+
+### Step 9
+
 - We will create a `<form>`, along one `<input>` and a button 
 
 Compare your code with the following and update accordingly.
@@ -767,6 +784,7 @@ Compare your code with the following and update accordingly.
 ```
 
 
+### Step 10
 
 - We will show the "objetivos" once one has been created. Note that we are also adding some JavaScript for creating the element and for adding an "Event Listener" to each newly created "objetivo" to delete it, later we will make it better, and add functionality for editing each "objetivo", etc
 
@@ -965,6 +983,8 @@ Investigate what is the "Pomodoro technique".
 ---
 
 After the break, let's implement the pomodoro counter.
+
+### Step 11
 
 In the next example only the HTML will change
 
@@ -1172,6 +1192,9 @@ In the next example only the HTML will change
 </html>
 
 ```
+
+### Step 12
+
 Now we add the CSS 
 
 ```html
@@ -1446,6 +1469,8 @@ Now we add the CSS
 
 ```
 
+
+### Step 13
 And now the Javascript necessary to make the Pomodoro counter work.
 
 ```html
