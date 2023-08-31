@@ -1,5 +1,10 @@
 #APP_ASISTENTE_ESTUDIOS_WEB_DEVELOPMENT_VERSION_2.0.BSv5
 
+The finished product of this tutorial can be seen at:
+https://cristianromero1234.github.io/App_asistente_estudio/html/index.html
+
+
+
 - Create HTML file named "index.html"
 
 if you want you could have you page on the internet. check in google "how to host html in google drive"
@@ -1839,5 +1844,10 @@ We will consider this tutorial as completed.
 There's still some work to do on the App, but I would recommend that you first implement the App in to your learning process (you as an user) and find out what it needs to be done and where.
 
 The first task I would recommend is to "extract" and "refactor" all the CSS and Javascript to the files mentioned at the begining. (after refactoring the app should be running ;D )
+
+This tutorial is avialable at https://cristianromero1234.github.io/App_asistente_estudio/
+
+and the finished product of this tutorial can be seen at:
+https://cristianromero1234.github.io/App_asistente_estudio/html/index.html
 
 
