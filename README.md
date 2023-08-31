@@ -41,6 +41,7 @@ Let's jump in:
 Write in index.html the basic "well-formed" scaffold.
 ---
 <details>
+    
 ```html
 
 <!DOCTYPE html>
