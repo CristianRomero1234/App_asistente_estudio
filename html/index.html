@@ -74,7 +74,25 @@
             <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <section class="accordion-body">
-                    This is where the pomodoro counter lives
+                    <section id="pomodoro-app">
+                        <section id="container">
+                          <section id="timer">
+                            <section id="time">
+                              <span id="minutes">25</span>
+                              <span id="colon">:</span>
+                              <span id="seconds">00</span>
+                            </section>
+                            <section id="filler"></section>
+                          </section>
+                      
+                          <section id="buttons">
+                            <button id="work">Work</button>
+                            <button id="shortBreak">Short Break</button>
+                            <button id="longBreak">Long Break</button>
+                            <button id="stop">Stop</button>
+                          </section>
+                        </section>
+                      </section>
                 </section>
             </section>
         </section>
@@ -88,22 +106,27 @@
             <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <section class="accordion-body" id="listaObjetivos">
-                    <form>
+                    <form id="objetivosForm">
                         <section class="mb-1" style="max-width:50%;">
                             <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
                             <input type="text" class="form-control" id="inputObjetivos">
                         </section>
-                        <button type="submit" class="btn btn-primary" onclick="crearNuevoObjetivo()">Añadir</button>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
 
 
                         <script>
-
+                            //Added this event listener due to form reloading page
+                            objetivosForm.addEventListener('submit', (event)=>{
+                                event.preventDefault();
+                                return crearNuevoObjetivo();
+                            })
                             let objetivos = [];
                             let counter = 0;
 
 
 
                             function crearNuevoObjetivo() {
+                                
                                 let nuevoObjetivo = document.createElement('p');
                                 nuevoObjetivo.innerText = inputObjetivos.value;
                                 nuevoObjetivo.style.margin = "5px";
