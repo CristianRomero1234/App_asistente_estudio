@@ -1,358 +1,1895 @@
-# app-asistente-estudio
---------------------------------------------------------------------------------------------------------------------------------------------
-App web Front-End, escrita en HTML, CSS y JS.
+# APP_ASISTENTE_ESTUDIOS_WEB_DEVELOPMENT_VERSION_2.0.BSv5
 
-Pensada para ofrecer un ambiente de trabajo, basado en las apps de Google, a estudiantes de modalidad on-line o autodidacta-on-line.
+The finished product of this tutorial can be seen at:
+https://cristianromero1234.github.io/App_asistente_estudio/html/index.html
 
-Para estudiantes de web development, este proyecto sirve para motivar el aprendizaje y la optimización de proyectos, ya que al ser solo el Front-End, se pudiesen buscar 
-soluciones de escalabilidad, además de la gran cantidad de mejoras que pueden ser aplicadas al propio Front-End.
 
-Este proyecto puede ser utilizado para practicar la teoría básica de HTML, CSS y JS.
---------------------------------------------------------------------------------------------------------------------------------------------
+- Create HTML file named "index.html"
 
-##Pre requisitos: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web
-## Instrucciones (6/9/2021-21:34:40-UTC+2): 
+if you want you could have you page on the internet. check in google "how to host html in google drive"
 
-1)Abrir una carpeta para alojar la app. Ejemplo:**"App_Asistente_Estudios"**
+To host a web page on Google Drive:
 
-2)Abrir un archivo index.html.
+- Create a folder in Google Drive and set the sharing permission to “Public on the Web.”
+- Upload the HTML, JavaScript and CSS files for your web page to your new folder (only the files).
+- Select the HTML file, open it and click the “Preview” button in the toolbar.
+- Share the URL (it will look like www.googledrive.com/host/…) and anyone can view your web page!
 
-  2.1) Iniciar Archivo de html. 
-  
-  
-Ejemplo:**"App_Asistente_Estudios/index.html"**
 
+In this tutorial we will write all the code inside "index.html", then is you job to progresively move it to other files (if you want).
+
+To not load you up with a lot of "information"
+Make use of https://text-compare.com/ and/or https://onlinetextcompare.com/html to check the differences between one step and the following.
+
+When comparing the code make sure to "iterate" at least 2 times. 
+
+1.  compare your current code to the code provided on each step.
+2.  compare the differences and make sure you understand before writing the new code to your program.
+
+Keys for completing this tutorial:
+
+- Compare the code you write with the examples provided.
+- Research what you don't understand. But don't let "not knowing" be an obstacle for writing the code provided.
+- Mind your keystrokes when transcribing. (type what you read, not what you "think" you read)
+- Type the code by yourself (you can copy it and paste it, but imagine the next examples as "pictures" of how the file should look like after each new addition)
+
+Let's jump in:
+
+## Steps
+
+### Step 1
+Write in index.html the basic "well-formed" scaffold.
+---
+<details>
+    
 ```html
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>App Asistente Estudios</title> 
-	
-```
-
-  2.2) Iniciar un Archivo de CSS y llamarlo en el documento html. 
-Ejemplo:**"App_Asistente_Estudios/estilo.css"** y **"App_Asistente_Estudios/index.html"**
-```html
-	<link rel="stylesheet" href="App_Asistente_Estudios/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App my Studies tool</title>
 </head>
-```
-                         
-                                 
- 3) Agregar un `<header>` en el documento, para pasar un banner superior y colocar el titulo que se mostrara al usuario. 
-    Ejemplo: 
-```html
-<header>
-	<div><h1>Titulo que se muestra al usuario</h1></div>
-</header>
-```
-```html
-<header>
-        <div type="banner_Superior"><h1 style="font-family: Arial, Helvetica, sans-serif;color:white;background-color: rgb(3, 85, 30);">Asistente de Estudios</h1></div>
-</header>
-```
-
-3.1) Se escribe en el archivo .CSS. 
- Ejemplo:**"App_Asistente_Estudios/estilo.css "**
- ```css
- div {
-	background-color: lightgrey;
-	width: 70%;
-	border: 15px solid green;
-	padding: 50px;
-	margin: 20px;
-	}
-```
-                                                      
-                                                 
-
-4) Se inicia la etiqueta `<body>`. 
-Ejemplo:**"App_Asistente_Estudios/index.html"**
-```html
-<body style="background-color: orange;">
-```
-5) Se inicia la Etiqueta `<ul>` dentro de `<body>`; se le pasan los titulos de los elementos que van a componer el Workspace. 
-Ejemplo:**"App_Asistente_Estudios/index.html"**
- ```html
- <ul>
-	<li>Pomodoro Counter</li>
-	<li>Google Docs</li>
-	<li>Google</li>
-	<li>Calendario</li>
-	<li>Lista de Objetivos</li>
-</ul>
-```
-5.1) Agregamos el codigo .css a la etiqueta `<li>` con el atributo `style:""`, en este caso letras blancas `<li style:"color:white">`
-```html
-<ul>
-	<li style="color:white">Pomodoro Counter</li>
-	<li style="color:white">Google Docs</li>
-	<li style="color:white">Google</li>
-	<li style="color:white">Calendario</li>
-	<li style="color:white">Lista de Objetivos</li>
-</ul>
-```                            
-        
- 5.2) Anclamos a través de la etiqueta `<a>` los hipervinculos para acceder a la herramienta del workspace que el usuario prefiera.     
-```html
-<ul>
-	<li style="color:white"><a target="_blank" href="Pomodoro/pomodoro_Counter.html" >Pomodoro Counter</a></li>
-        <li style="color:white"><a target="_blank" href="https://docs.google.com">Google Docs</a></li>
-        <li style="color:white"> <a target="_blank" href="https://www.google.es/">Google</a></li>
-        <li style="color:white"><a target="_blank" href="https://calendar.google.com/calendar">Calendario</a></li>
-        <li style="color:white"><a target="_blank" href="Todos/Todo.html">Lista de Objetivos</a> </li>
-</ul>
-```
-                                   
- 5.3) Cerramos la etiqueta `</body>` y la etiqueta `</html>` respetando la indentación correcta para finalizar con el documento .html.
- Ejemplo:**"App_Asistente_Estudios/index.html"**
-```html
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>App Asistente Estudios</title>
-        <link rel="stylesheet" href="Pagina_principal/estilo.css">
-    </head>
-    <header>
-    <div type="banner_Superior"><h1 style="font-family: Arial, Helvetica, sans-serif;color:white;background-color: rgb(3, 85, 30);">Asistente de Estudios</h1></div>
-    </header>
-    <body style="background-color: orange;">
-        <ul>
-            <li style="color:white"><a target="_blank" href="Pomodoro/pomodoro_Counter.html" >Pomodoro Counter</a></li>
-            <li style="color:white"><a target="_blank" href="https://www.sejda.com/es/pdf-editor?">Block de Notas</a></li>
-            <li style="color:white"> <a target="_blank" href="https://www.google.es/">Google</a></li>
-            <li style="color:white"><a target="_blank" href="https://calendar.google.com/calendar">Calendario</a></li>
-            <li style="color:white"><a target="_blank" href="Todos/Todo.html">Lista de Objetivos</a> </li>
-        </ul>
-        
-    </body>
+<body>
+    
+</body>
 </html>
+
+
 ```
- 
- 
- 
- 
-6) Creamos 2 carpetas, que contendran los archivos necesarios para el _“Pomodoro Counter”_ y la _“Lista de Tareas”_
-  
-6.1) **_“Pomodoro Counter”_**
-6.1.1) Abrimos carpeta dentro del fichero principal. 
-Ejemplo:**"App_Asistente_Estudios/Pomodoro"**
-6.1.1.1) Abrimos un Archivo .html para el _“Pomodoro Counter”_ 
-Ejemplo:**"App_Asistente_Estudios/Pomodoro/pomodoro_Counter.html"**
-6.1.1.1.1) Iniciar Archivo de html. 
-Ejemplo:**"App_Asistente_Estudios/Pomodoro/pomodoro_Counter.html"**
+</details>
+
+### Step 2
+
+As we will focus on learning Bootstrap, then let's include the CDNs for Bootstrap version 5 in our index.html file:
+
+---
+
+<details>
+
 ```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <title>Pomodoro Timer</title> 
-```
-
-6.1.1.1.2) Iniciar un Archivo de CSS y llamarlo en el documento html. 
-Ejemplo:**"App_Asistente_Estudios/Pomodoro/pomodoro_Counter.html"**
-```html
-	<link rel="stylesheet" href="style_pomodoro_counter.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Notice the inclusion of bootstrap's v5.3.1 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <title>App my Studies tool</title>
 </head>
-```
-6.1.1.1.3) Iniciar un Archivo de CSS. 
-Ejemplo:**"App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css"**            
-```css
-html {
-	background-color: #f8a323;
-	height: 100%;
-	font-family: Arial, Helvetica, sans-serif;
-}
-```
-6.1.1.1.4) En el Ejemplo anterior, indicamos el codigo CSS para el layout del codigo html en general, con atributos como `"background-color:; height:; font-family:;"`
-6.1.1.1.5) Continuamos definiendo el diseño css dentro del archivo **"App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css"**. En este caso para la etiqueta `<h1>Pomodoro Timer</h1>`
-```css
-h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-   }
-```
-6.1.1.1.6) Continuamos definiendo el diseño css dentro del archivo **"App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css"**. En este caso para `<div id="container">`
-```css
-#container {
-            height: 200px;
-            width: 700px;
-            background-color: #F5E4C3;
-            margin: 0 auto;
-            border: 5px solid #88B169;
+<body>
+    
+</body>
+</html>
 
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            }
-                      
+
 ```
-            
-6.1.1.1.1.3) Continuamos definiendo el diseño css dentro del archivo **"App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css"**. 
-                      En este caso para los `class="timer"` dentro de `<div id="container">`. es decir:
-              
-              
-**Dentro del archivo "App_Asistente_Estudios/Pomodoro/pomodoro_Counter.html"**
+</details>
+
+### Step 3
+
+We will create our "Navigation bar". 
+Include links to google search, google calendar, also placeholder links "#" for other features of our web page.
+Notice the use of semantic HTML on the example, other good practices are to include unique "id" attributes for each element inside <body>
+
+---
+
+<details>
+
 ```html
-<!--Work Timer-->
-<div id="work-timer" class="timer">
-	<p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
-</div>
 
-<!--Cycle Counter-->
-<p id="counter" class="timer">0</p>
+<!DOCTYPE html>
+<html lang="en">
 
-<!--Break Timer-->
-<div id="break-timer" class="timer">
-	<p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
-</div>
-```
-           
-           
- **Dentro del archivo "App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css".**
-```css
-/*timers*/
-.label {
-	align-self: center;
-    	justify-self: center;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+</head>
 
-    	font-size: 30px;
-    	font-weight: bold;
-	}
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png" alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img
+                        style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png" alt="Google Calendar" height="75" /> 
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Block de notas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
 
-#work {
-    grid-area: 1 / 2 / 1 / 2;
-}
-#break {
-    grid-area: 1 / 4 / 1 / 4;
-}
-#cycles {
-    grid-area: 1 / 3 / 1 / 3;
-}
+</html>
 
-.timer {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-
-    font-size: 30px;
-    font-weight: bold;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-#counter {
-    grid-area: 2 / 3 / 2 / 3;
-    color: red;
-}
-
-#work-timer {
-    grid-area: 2 / 2 / 2 / 2;
-}
-
-#break-timer {
-    grid-area: 2 / 4 / 2 / 4;
-}
 ```
 
+</details>
 
+### Step 4
 
-         
-6.1.1.1.1.4) Continuamos definiendo el diseño css dentro del archivo **"App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css"**. 
-En este caso para los botones.
-**Dentro del archivo "App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css".**
-```css
-/*buttons*/
+Let's change "Block de notas", we will convert it to a menu, instead of a link, also change the text to "Escribir", notice that we replaced the html class attribute for easing the process of writting the CSS code to style a "dropdown menu" with options. (Bootstrap CDN, provides over the internet the CSS+JS code that help us use "Bootstrap Components")  
 
-.btn {
-    align-self: center;
-    justify-self: center;
+In this way we can offer a variety of resources, that handle the writing and taking notes tasks (Including writing our own notepad using HTML, CSS and JS).
 
-    width: 100px;
-    height: 30px;
+<details>
 
-    font-size: 20px;
-}
+```html
 
-#start {
-    grid-area: 3 / 2 / 3 / 2;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-#reset {
-    grid-area: 3 / 3 / 3 / 3;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+</head>
 
-#stop {
-    grid-area: 3 / 4 / 3 / 4;
-}
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img
+                        style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Google Docs</a></li>
+                      <li><a class="dropdown-item" href="#">Online PDF editor</a></li>
+                      <li><a class="dropdown-item" href="#">Your custom HTML Notepad</a></li>
+                    </ul>
+                  </li> 
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
+
 ```
-                      
-                      
-         
-         
-         
-6.1.1.4) Iniciamos la etiqueta `<body>`
-6.1.1.5) iniciamos etiqueta `<h1>` dentro de `<body>`
-6.1.1.6) Pasamos un parrafo con codigo css y texto `<p style:""></p>`.
-6.1.1.7) Iniciamos una etiqueta `<div>` para crear un objeto con `id="container"` para html y  `#container{}` para css.
-6.1.1.8) Pasamos 3 parrafos con codigo css y texto `<p style:""></p>`. que llamaremos:`"Work","cycle","break"` en referencia al tiempo de trabajo (25min), ciclos completos (25+5 min de descanso) y descanso/break(5min)
-      6.1.1.9) Anidamos otra etiqueta `<div>` que contendrá: `"work Timer"`. la cerramos `</div>`
-      6.1.1.10)Anidamos otra etiqueta `<div>` que contendrá: `"break Timer"`. la cerramos `</div>`
-      6.1.1.11)Anidamos una etiqueta` <p> `que muestra los ciclos completos.
-      6.1.1.12)Anidamos 3 etiquetas `<button>` correspondientes a:` "Start", "Pause", "Reset"`
-      6.1.1.13)Abrimos la etiqueta `<script>` para utilizar las funciones que manejan la funcionalidad del timer
-      6.1.1.14)Cerramos `</body>` y `</html>`
-  
-6.2) “Lista de Tareas”
-6.2.1) Abrimos carpeta dentro del fichero principal. Ejemplo:**"App_Asistente_Estudios/Todos"**
-6.2.1.1) Abrimos un Archivo `.html` para la **_“Lista de Tareas”_**. Ejemplo:**"App_Asistente_Estudios/Todos/Todo.html**
-6.2.1.2) Iniciar Archivo de html. 
-Ejemplo:**"App_Asistente_Estudios/Todos/Todo.html"**
+
+</details>
+
+Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML Notepad", are better suited to be displayed together but without interfering with one another, so we will append and an "Accordion" that help us with having our three features handy.
+
+---
+
+<details>
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title></title>
-```
-                               
-6.2.1.3)Iniciar un Archivo de CSS y llamarlo en el documento html. 
-Ejemplo:**"App_Asistente_Estudios/Todos/Todo.html"**
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="#">Online PDF editor</a></li>
+                        <li><a class="dropdown-item" href="#">Your custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                   Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                   This is where the  pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the  lista de objetivos lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the  pomodoro counter lives
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+``` 
+
+</details>
+
+At this point we have the basic structure of our web page that so far only makes use of HTML and Bootstrap v5.3.1,
+
+But we also know the is just a scaffold, and we're set for few more hours of work and learning.
+
+Stop at this point. 
+
+Do not go beyond this point until you've had at least a 6-hour timespan of being offline.
+
+But please, make sure you understand what we have right now, and investigate the topics that sparked doubts.
+
+---
+
+Continue here after the break:
+
+Now we will focus on adding more functionality.
+
+---
+### Step 5
+
+First, find the text "Google Docs" inside of anchor tag, we will link to google docs (search for Google Docs anchor tag in you file index.html and add the href attribute pointing to "https://docs.google.com/")
+
+`...   <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li> ...`
+
+---
+
+### Step 6
+
+Then, find the text "Online PDF editor" inside of anchor tag, we will link to an online pdf editor in our case: https://openpdf.com/lp/edit-pdf.html
+
+(search for "Online PDF editor" anchor tag anchor tag in you file index.html and add the href attribute pointing to "https://openpdf.com/lp/edit-pdf.html")
+
+`... <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a></li> ...`
+
+---
+
+### Step 7
+
+We need to "connect" our links in the nav bar to our accordion, therefore we must do the following changes to the code:
+
+Note that we're basically making use of attributes like `data-bs-toggle, data-bs-target, aria-expanded, aria-controls`, maybe intead of understanding what each of those are, check where are they being used in the code. (compare where they where being used before in the previous steps, and where are they being used now)
+
+<details>
 
 ```html
-	<link rel="stylesheet" href="style_todo.css">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
 </head>
-```                                                
-                          
 
---------------------------------------------------------------------------------------------------------------------------------------------
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item"  href="#collapseThree" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#collapseTwo" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the lista de objetivos lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where  Your Custom HTML Notepad lives
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+```
+
+</details>
+---
+
+### Step 8
+
+Now, let's begin "our custom HTML Notepad" by writing a basic "notepad" implementation.
+
+For this we will use <fieldset> tag, along some buttons (for which we will add functionality later on).
+
+Compare your code with the following and update it accordingly.
+
+<details>
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the lista de objetivos lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
 
 
-Repositorio Git: https://github.com/CristianRomero1234/App_asistente_estudio
-El Repositorio cuenta con una carpeta principal (App_Asistente_Estudios)
-que contiene 2 carpetas adicionales con los archivos necesarios para desplegar el “Pomodoro Counter” (App_Asistente_Estudios/Pomodoro), 
-y la “Lista de Tareas”(App_Asistente_Estudios/Todos); y un archivo .HTML (App_Asistente_Estudios/index.html) y un  archivo .CSS (App_Asistente_Estudios/estilo.css).
+                        <fieldset >
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
 
-(App_Asistente_Estudios)
-	(App_Asistente_Estudios/Pomodoro)
-		(App_Asistente_Estudios/Pomodoro/Pomodoro_counter_Main.js)
-		(App_Asistente_Estudios/Pomodoro/pomodoro_Counter.html)
-		(App_Asistente_Estudios/Pomodoro/style_pomodoro_counter.css)
 
 
-	(App_Asistente_Estudios/Todos)
-		(App_Asistente_Estudios/Todos/Todo_Main.js)
-		(App_Asistente_Estudios/Todos/Todo.html)
-		(App_Asistente_Estudios/Todos/style_todo.css)
+                    </form>
+                    <br>
 
-	(App_Asistente_Estudios/index.html)
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
 
-	(App_Asistente_Estudios/estilo.css)
------------------------------------------------------------------------------------------------------------------------------------------
+</html>
+
+``` 
+
+</details>
+
+We only need to add functionality for the "save" feature, to consider the notepad as "completed". but for now we will stop here.
+
+Take a good rest (so far you have had to type many lines, enjoy being a programmer)
+
+---
+
+The next step is to create our "Lista de Objetivos", 
+
+A High-Level explanation: 
+
+
+### Step 9
+
+- We will create a `<form>`, along one `<input>` and a button 
+
+Compare your code with the following and update accordingly.
+
+<details>
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form>                
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
+
+
+                        <fieldset>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+```
+
+</details>
+
+### Step 10
+
+- We will show the "objetivos" once one has been created. Note that we are also adding some JavaScript for creating the element and for adding an "Event Listener" to each newly created "objetivo" to delete it, later we will make it better, and add functionality for editing each "objetivo", etc
+
+Compare your code with the following and update accordingly.
+
+<details>
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    This is where the pomodoro counter lives
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body" id="listaObjetivos">
+                    <form>
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary" onclick="crearNuevoObjetivo()">Añadir</button>
+
+
+                        <script>
+
+                            let objetivos = [];
+                            let counter = 0;
+
+                            function crearNuevoObjetivo() {
+                                let nuevoObjetivo = document.createElement('p');
+                                nuevoObjetivo.innerText = inputObjetivos.value;
+                                nuevoObjetivo.style.margin = "5px";
+                                objetivos.push(nuevoObjetivo.innerText);
+                                nuevoObjetivo.id = counter;
+                                counter++;
+                                listaObjetivos.appendChild(nuevoObjetivo);
+                                inputObjetivos.value = "";
+                                nuevoObjetivo.addEventListener("click", () => {
+                                    listaObjetivos.removeChild(nuevoObjetivo)
+                                })
+                            }
+                        </script>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
+
+
+                        <fieldset>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+``` 
+
+</details>
+
+---
+
+Now we will introduce a bigger chunk of Javascript. Is recommended but not required, to have read  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics_started_with_the_web
+
+
+As stated before we will include at first everything inside our index.html file.
+
+Now take break again. Use you web a little bit an try to connect in your mind how what you have written is working.
+
+Investigate what is the "Pomodoro technique".
+
+---
+
+After the break, let's implement the pomodoro counter.
+
+### Step 11
+
+In the next example only the HTML will change
+<details>
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <section id="pomodoro-app">
+                        <section id="container">
+                          <section id="timer">
+                            <section id="time">
+                              <span id="minutes">25</span>
+                              <span id="colon">:</span>
+                              <span id="seconds">00</span>
+                            </section>
+                            <section id="filler"></section>
+                          </section>
+                      
+                          <section id="buttons">
+                            <button id="work">Work</button>
+                            <button id="shortBreak">Short Break</button>
+                            <button id="longBreak">Long Break</button>
+                            <button id="stop">Stop</button>
+                          </section>
+                        </section>
+                      </section>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body" id="listaObjetivos">
+                    <form id="objetivosForm">
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+
+
+                        <script>
+                            //Added this event listener due to form reloading page
+                            objetivosForm.addEventListener('submit', (event)=>{
+                                event.preventDefault();
+                                return crearNuevoObjetivo();
+                            })
+                            let objetivos = [];
+                            let counter = 0;
+
+
+
+                            function crearNuevoObjetivo() {
+                                
+                                let nuevoObjetivo = document.createElement('p');
+                                nuevoObjetivo.innerText = inputObjetivos.value;
+                                nuevoObjetivo.style.margin = "5px";
+                                objetivos.push(nuevoObjetivo.innerText);
+                                nuevoObjetivo.id = counter;
+                                counter++;
+                                listaObjetivos.appendChild(nuevoObjetivo);
+                                inputObjetivos.value = "";
+                                nuevoObjetivo.addEventListener("click", () => {
+                                    listaObjetivos.removeChild(nuevoObjetivo)
+                                })
+                            }
+                        </script>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
+
+
+                        <fieldset>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+```
+
+</details>
+
+### Step 12
+
+Now we add the CSS 
+
+<details>
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <style>
+                        #container {
+                            border: 1px solid #333;
+                            border-radius: 20px;
+                            width: 400px;
+                            margin: 20px auto;
+                            padding: 20px;
+                            text-align: center;
+                            background: #333;
+                        }
+
+                        #timer {
+                            color: #f00;
+                            font-size: 50px;
+                            margin: 10px auto;
+                            border: 5px solid red;
+                            border-radius: 50%;
+                            width: 200px;
+                            height: 200px;
+                            overflow: hidden;
+                            position: relative;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            cursor: default;
+                        }
+
+                        #time {
+                            margin-top: 70px;
+                            z-index: 1;
+                            position: relative;
+                        }
+
+                        #filler {
+                            background: #ddffcc;
+                            height: 0px;
+                            width: 200px;
+                            position: absolute;
+                            bottom: 0;
+                        }
+
+                        #buttons button {
+                            background: #4da6ff;
+                            border: none;
+                            color: #fff;
+                            cursor: pointer;
+                            padding: 5px;
+                            width: 90px;
+                            margin: 10px auto;
+                            font-size: 14px;
+                            height: 50px;
+                            border-radius: 50px;
+                        }
+
+                        #buttons button#shortBreak {
+                            background: #0c0;
+                        }
+
+                        #buttons button#longBreak {
+                            background: #080;
+                        }
+
+                        #buttons button#stop {
+                            background: #f00;
+                        }
+                    </style>
+                    <section id="pomodoro-app">
+                        <section id="container">
+                            <section id="timer">
+                                <section id="time">
+                                    <span id="minutes">25</span>
+                                    <span id="colon">:</span>
+                                    <span id="seconds">00</span>
+                                </section>
+                                <section id="filler"></section>
+                            </section>
+
+                            <section id="buttons">
+                                <button id="work">Work</button>
+                                <button id="shortBreak">Short Break</button>
+                                <button id="longBreak">Long Break</button>
+                                <button id="stop">Stop</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body" id="listaObjetivos">
+                    <form id="objetivosForm">
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+
+
+                        <script>
+                            //Added this event listener due to form reloading page
+                            objetivosForm.addEventListener('submit', (event) => {
+                                event.preventDefault();
+                                return crearNuevoObjetivo();
+                            })
+                            let objetivos = [];
+                            let counter = 0;
+
+
+
+                            function crearNuevoObjetivo() {
+
+                                let nuevoObjetivo = document.createElement('p');
+                                nuevoObjetivo.innerText = inputObjetivos.value;
+                                nuevoObjetivo.style.margin = "5px";
+                                objetivos.push(nuevoObjetivo.innerText);
+                                nuevoObjetivo.id = counter;
+                                counter++;
+                                listaObjetivos.appendChild(nuevoObjetivo);
+                                inputObjetivos.value = "";
+                                nuevoObjetivo.addEventListener("click", () => {
+                                    listaObjetivos.removeChild(nuevoObjetivo)
+                                })
+                            }
+                        </script>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
+
+
+                        <fieldset>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+```
+
+</details>
+
+### Step 13
+And now the Javascript necessary to make the Pomodoro counter work.
+
+<details>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>App my Studies tool</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <section class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a target="_blank" href="https://www.google.com/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png"
+                            alt="Google" style="max-height: 40px">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a target="_blank" href="https://calendar.google.com/calendar"><img style="max-height: 40px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                            alt="Google Calendar" height="75" /> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">Pomodoro Counter</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Escribir</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://docs.google.com/">Google Docs</a></li>
+                        <li><a class="dropdown-item" href="https://openpdf.com/lp/edit-pdf.html">Online PDF editor</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#collapseThree" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Your
+                                custom HTML Notepad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">Lista de Objetivos</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <section class="accordion" id="accordionExample">
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Pomodoro Counter
+                </button>
+            </h2>
+            <section id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <style>
+                        #container {
+                            border: 1px solid #333;
+                            border-radius: 20px;
+                            width: 400px;
+                            margin: 20px auto;
+                            padding: 20px;
+                            text-align: center;
+                            background: #333;
+                        }
+
+                        #timer {
+                            color: #f00;
+                            font-size: 50px;
+                            margin: 10px auto;
+                            border: 5px solid red;
+                            border-radius: 50%;
+                            width: 200px;
+                            height: 200px;
+                            overflow: hidden;
+                            position: relative;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            cursor: default;
+                        }
+
+                        #time {
+                            margin-top: 70px;
+                            z-index: 1;
+                            position: relative;
+                        }
+
+                        #filler {
+                            background: #ddffcc;
+                            height: 0px;
+                            width: 200px;
+                            position: absolute;
+                            bottom: 0;
+                        }
+
+                        #buttons button {
+                            background: #4da6ff;
+                            border: none;
+                            color: #fff;
+                            cursor: pointer;
+                            padding: 5px;
+                            width: 90px;
+                            margin: 10px auto;
+                            font-size: 14px;
+                            height: 50px;
+                            border-radius: 50px;
+                        }
+
+                        #buttons button#shortBreak {
+                            background: #0c0;
+                        }
+
+                        #buttons button#longBreak {
+                            background: #080;
+                        }
+
+                        #buttons button#stop {
+                            background: #f00;
+                        }
+                    </style>
+                    <section id="pomodoro-app">
+                        <section id="container">
+                            <section id="timer">
+                                <section id="time">
+                                    <span id="minutes">25</span>
+                                    <span id="colon">:</span>
+                                    <span id="seconds">00</span>
+                                </section>
+                                <section id="filler"></section>
+                            </section>
+
+                            <section id="buttons">
+                                <button id="work">Work</button>
+                                <button id="shortBreak">Short Break</button>
+                                <button id="longBreak">Long Break</button>
+                                <button id="stop">Stop</button>
+                            </section>
+                        </section>
+                    </section>
+                    <script>
+                        var pomodoro = {
+                            started: false,
+                            minutes: 0,
+                            seconds: 0,
+                            fillerHeight: 0,
+                            fillerIncrement: 0,
+                            interval: null,
+                            minutesDom: null,
+                            secondsDom: null,
+                            fillerDom: null,
+                            init: function () {
+                                var self = this;
+                                this.minutesDom = document.querySelector('#minutes');
+                                this.secondsDom = document.querySelector('#seconds');
+                                this.fillerDom = document.querySelector('#filler');
+                                this.interval = setInterval(function () {
+                                    self.intervalCallback.apply(self);
+                                }, 1000);
+                                document.querySelector('#work').onclick = function () {
+                                    self.startWork.apply(self);
+                                };
+                                document.querySelector('#shortBreak').onclick = function () {
+                                    self.startShortBreak.apply(self);
+                                };
+                                document.querySelector('#longBreak').onclick = function () {
+                                    self.startLongBreak.apply(self);
+                                };
+                                document.querySelector('#stop').onclick = function () {
+                                    self.stopTimer.apply(self);
+                                };
+                            },
+                            resetVariables: function (mins, secs, started) {
+                                this.minutes = mins;
+                                this.seconds = secs;
+                                this.started = started;
+                                this.fillerIncrement = 200 / (this.minutes * 60);
+                                this.fillerHeight = 0;
+                            },
+                            startWork: function () {
+                                this.resetVariables(25, 0, true);
+                            },
+                            startShortBreak: function () {
+                                this.resetVariables(5, 0, true);
+                            },
+                            startLongBreak: function () {
+                                this.resetVariables(15, 0, true);
+                            },
+                            stopTimer: function () {
+                                this.resetVariables(25, 0, false);
+                                this.updateDom();
+                            },
+                            toDoubleDigit: function (num) {
+                                if (num < 10) {
+                                    return "0" + parseInt(num, 10);
+                                }
+                                return num;
+                            },
+                            updateDom: function () {
+                                this.minutesDom.innerHTML = this.toDoubleDigit(this.minutes);
+                                this.secondsDom.innerHTML = this.toDoubleDigit(this.seconds);
+                                this.fillerHeight = this.fillerHeight + this.fillerIncrement;
+                                this.fillerDom.style.height = this.fillerHeight + 'px';
+                            },
+                            intervalCallback: function () {
+                                if (!this.started) return false;
+                                if (this.seconds == 0) {
+                                    if (this.minutes == 0) {
+                                        this.timerComplete();
+                                        return;
+                                    }
+                                    this.seconds = 59;
+                                    this.minutes--;
+                                } else {
+                                    this.seconds--;
+                                }
+                                this.updateDom();
+                            },
+                            timerComplete: function () {
+                                this.started = false;
+                                this.fillerHeight = 0;
+                            }
+                        };
+                        window.onload = function () {
+                            pomodoro.init();
+                        };
+                    </script>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Lista de Objetivos
+                </button>
+            </h2>
+            <section id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body" id="listaObjetivos">
+                    <form id="objetivosForm">
+                        <section class="mb-1" style="max-width:50%;">
+                            <label for="inputObjetivos" class="form-label">Nuevo Objetivo</label>
+                            <input type="text" class="form-control" id="inputObjetivos">
+                        </section>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+
+
+                        <script>
+                            //Added this event listener due to form reloading page
+                            objetivosForm.addEventListener('submit', (event) => {
+                                event.preventDefault();
+                                return crearNuevoObjetivo();
+                            })
+                            let objetivos = [];
+                            let counter = 0;
+
+
+
+                            function crearNuevoObjetivo() {
+
+                                let nuevoObjetivo = document.createElement('p');
+                                nuevoObjetivo.innerText = inputObjetivos.value;
+                                nuevoObjetivo.style.margin = "5px";
+                                objetivos.push(nuevoObjetivo.innerText);
+                                nuevoObjetivo.id = counter;
+                                counter++;
+                                listaObjetivos.appendChild(nuevoObjetivo);
+                                inputObjetivos.value = "";
+                                nuevoObjetivo.addEventListener("click", () => {
+                                    listaObjetivos.removeChild(nuevoObjetivo)
+                                })
+                            }
+                        </script>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <section class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Your Custom HTML Notepad
+                </button>
+            </h2>
+            <section id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <section class="accordion-body">
+                    <form style="padding: 5px;">
+
+
+                        <fieldset>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand('italic',false,null);"
+                                title="Italicize Highlighted Text"><i>I</i>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'bold',false,null);"
+                                title="Bold Highlighted Text"><b>B</b>
+                            </button>
+                            <button type="button" class="btn btn-light"
+                                onclick="document.execCommand( 'underline',false,null);"
+                                title='Underline Highlighted Text'><u>U</u>
+                            </button>
+                            <section class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Save
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="#">Download file</a></li>
+                                    <li><a class="dropdown-item" href="#">Save to LocalStorage</a></li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                        <fieldset id="editor" contenteditable="true"
+                            style="border: 2px solid black; border-radius:15px; min-height: 200px; padding:10px; margin-top:5px;">
+                            Some text...
+                        </fieldset>
+
+
+
+                    </form>
+                    <br>
+
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
+```
+
+</details>
+
+We now have over 300 lines of code written by ourselves!
+
+And a final product that can help us become better programmers and students.
+
+We will consider this tutorial as completed.
+
+There's still some work to do on the App, but I would recommend that you first implement the App in to your learning process (you as an user) and find out what it needs to be done and where.
+
+The first task I would recommend is to "extract" and "refactor" all the CSS and Javascript to the files mentioned at the begining. (after refactoring the app should be running ;D )
+
+This tutorial is avialable at https://cristianromero1234.github.io/App_asistente_estudio/
+
+and the finished product of this tutorial can be seen at:
+https://cristianromero1234.github.io/App_asistente_estudio/html/index.html
+
 
