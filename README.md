@@ -222,7 +222,7 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
 
 ---
 
-<detils>
+<details>
 
 ```html
 <!DOCTYPE html>
