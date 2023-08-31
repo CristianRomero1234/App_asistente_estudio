@@ -66,6 +66,7 @@ Write in index.html the basic "well-formed" scaffold.
 As we will focus on learning Bootstrap, then let's include the CDNs for Bootstrap version 5 in our index.html file:
 
 ---
+
 <details>
 
 ```html
