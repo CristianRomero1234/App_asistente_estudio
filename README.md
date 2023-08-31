@@ -66,6 +66,8 @@ Write in index.html the basic "well-formed" scaffold.
 As we will focus on learning Bootstrap, then let's include the CDNs for Bootstrap version 5 in our index.html file:
 
 ---
+<details>
+
 ```html
 
 <!DOCTYPE html>
@@ -87,6 +89,7 @@ As we will focus on learning Bootstrap, then let's include the CDNs for Bootstra
 
 
 ```
+</details>
 
 ### Step 3
 
@@ -95,6 +98,9 @@ Include links to google search, google calendar, also placeholder links "#" for 
 Notice the use of semantic HTML on the example, other good practices are to include unique "id" attributes for each element inside <body>
 
 ---
+
+<details>
+
 ```html
 
 <!DOCTYPE html>
@@ -144,12 +150,15 @@ Notice the use of semantic HTML on the example, other good practices are to incl
 
 ```
 
+</details>
 
 ### Step 4
 
 Let's change "Block de notas", we will convert it to a menu, instead of a link, also change the text to "Escribir", notice that we replaced the html class attribute for easing the process of writting the CSS code to style a "dropdown menu" with options. (Bootstrap CDN, provides over the internet the CSS+JS code that help us use "Bootstrap Components")  
 
 In this way we can offer a variety of resources, that handle the writing and taking notes tasks (Including writing our own notepad using HTML, CSS and JS).
+
+<details>
 
 ```html
 
@@ -206,9 +215,13 @@ In this way we can offer a variety of resources, that handle the writing and tak
 
 ```
 
+</details>
+
 Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML Notepad", are better suited to be displayed together but without interfering with one another, so we will append and an "Accordion" that help us with having our three features handy.
 
 ---
+<detils>
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -304,6 +317,9 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
 
 </html>
 ``` 
+
+</details>
+
 At this point we have the basic structure of our web page that so far only makes use of HTML and Bootstrap v5.3.1,
 
 But we also know the is just a scaffold, and we're set for few more hours of work and learning.
@@ -344,6 +360,8 @@ Then, find the text "Online PDF editor" inside of anchor tag, we will link to an
 We need to "connect" our links in the nav bar to our accordion, therefore we must do the following changes to the code:
 
 Note that we're basically making use of attributes like `data-bs-toggle, data-bs-target, aria-expanded, aria-controls`, maybe intead of understanding what each of those are, check where are they being used in the code. (compare where they where being used before in the previous steps, and where are they being used now)
+
+<details>
 
 ```html
 
@@ -447,6 +465,7 @@ Note that we're basically making use of attributes like `data-bs-toggle, data-bs
 
 ```
 
+</details>
 ---
 
 ### Step 8
@@ -457,7 +476,7 @@ For this we will use <fieldset> tag, along some buttons (for which we will add f
 
 Compare your code with the following and update it accordingly.
 
-
+<details>
 
 ```html
 
@@ -612,6 +631,7 @@ Compare your code with the following and update it accordingly.
 
 ``` 
 
+</details>
 
 We only need to add functionality for the "save" feature, to consider the notepad as "completed". but for now we will stop here.
 
@@ -629,6 +649,8 @@ A High-Level explanation:
 - We will create a `<form>`, along one `<input>` and a button 
 
 Compare your code with the following and update accordingly.
+
+<details>
 
 ```html
 
@@ -789,12 +811,15 @@ Compare your code with the following and update accordingly.
 
 ```
 
+</details>
 
 ### Step 10
 
 - We will show the "objetivos" once one has been created. Note that we are also adding some JavaScript for creating the element and for adding an "Event Listener" to each newly created "objetivo" to delete it, later we will make it better, and add functionality for editing each "objetivo", etc
 
 Compare your code with the following and update accordingly.
+
+<details>
 
 ```html
 
@@ -975,6 +1000,9 @@ Compare your code with the following and update accordingly.
 </html>
 
 ``` 
+
+</details>
+
 ---
 
 Now we will introduce a bigger chunk of Javascript. Is recommended but not required, to have read  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics_started_with_the_web
@@ -993,6 +1021,7 @@ After the break, let's implement the pomodoro counter.
 ### Step 11
 
 In the next example only the HTML will change
+<details>
 
 ```html
 
@@ -1199,9 +1228,13 @@ In the next example only the HTML will change
 
 ```
 
+</details>
+
 ### Step 12
 
 Now we add the CSS 
+
+<details>
 
 ```html
 
@@ -1475,9 +1508,12 @@ Now we add the CSS
 
 ```
 
+</details>
 
 ### Step 13
 And now the Javascript necessary to make the Pomodoro counter work.
+
+<details>
 
 ```html
 <!DOCTYPE html>
@@ -1836,6 +1872,9 @@ And now the Javascript necessary to make the Pomodoro counter work.
 </html>
 
 ```
+
+</details>
+
 We now have over 300 lines of code written by ourselves!
 
 And a final product that can help us become better programmers and students.
