@@ -40,7 +40,7 @@ Let's jump in:
 ### Step 1
 Write in index.html the basic "well-formed" scaffold.
 ---
-<details>
+
     
 ```html
 
@@ -59,7 +59,7 @@ Write in index.html the basic "well-formed" scaffold.
 
 
 ```
-</details>
+
 
 ### Step 2
 
@@ -67,7 +67,7 @@ As we will focus on learning Bootstrap, then let's include the CDNs for Bootstra
 
 ---
 
-<details>
+
 
 ```html
 
@@ -90,7 +90,7 @@ As we will focus on learning Bootstrap, then let's include the CDNs for Bootstra
 
 
 ```
-</details>
+
 
 ### Step 3
 
@@ -100,7 +100,7 @@ Notice the use of semantic HTML on the example, other good practices are to incl
 
 ---
 
-<details>
+
 
 ```html
 
@@ -151,7 +151,7 @@ Notice the use of semantic HTML on the example, other good practices are to incl
 
 ```
 
-</details>
+
 
 ### Step 4
 
@@ -159,7 +159,7 @@ Let's change "Block de notas", we will convert it to a menu, instead of a link, 
 
 In this way we can offer a variety of resources, that handle the writing and taking notes tasks (Including writing our own notepad using HTML, CSS and JS).
 
-<details>
+
 
 ```html
 
@@ -216,13 +216,13 @@ In this way we can offer a variety of resources, that handle the writing and tak
 
 ```
 
-</details>
+
 
 Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML Notepad", are better suited to be displayed together but without interfering with one another, so we will append and an "Accordion" that help us with having our three features handy.
 
 ---
 
-<details>
+
 
 ```html
 <!DOCTYPE html>
@@ -320,7 +320,7 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
 </html>
 ``` 
 
-</details>
+
 
 At this point we have the basic structure of our web page that so far only makes use of HTML and Bootstrap v5.3.1,
 
@@ -363,7 +363,7 @@ We need to "connect" our links in the nav bar to our accordion, therefore we mus
 
 Note that we're basically making use of attributes like `data-bs-toggle, data-bs-target, aria-expanded, aria-controls`, maybe intead of understanding what each of those are, check where are they being used in the code. (compare where they where being used before in the previous steps, and where are they being used now)
 
-<details>
+
 
 ```html
 
@@ -467,7 +467,7 @@ Note that we're basically making use of attributes like `data-bs-toggle, data-bs
 
 ```
 
-</details>
+
 ---
 
 ### Step 8
@@ -478,7 +478,7 @@ For this we will use <fieldset> tag, along some buttons (for which we will add f
 
 Compare your code with the following and update it accordingly.
 
-<details>
+
 
 ```html
 
@@ -633,7 +633,7 @@ Compare your code with the following and update it accordingly.
 
 ``` 
 
-</details>
+
 
 We only need to add functionality for the "save" feature, to consider the notepad as "completed". but for now we will stop here.
 
@@ -652,7 +652,7 @@ A High-Level explanation:
 
 Compare your code with the following and update accordingly.
 
-<details>
+
 
 ```html
 
@@ -813,7 +813,7 @@ Compare your code with the following and update accordingly.
 
 ```
 
-</details>
+
 
 ### Step 10
 
@@ -821,7 +821,7 @@ Compare your code with the following and update accordingly.
 
 Compare your code with the following and update accordingly.
 
-<details>
+
 
 ```html
 
@@ -1003,7 +1003,7 @@ Compare your code with the following and update accordingly.
 
 ``` 
 
-</details>
+
 
 ---
 
@@ -1023,7 +1023,7 @@ After the break, let's implement the pomodoro counter.
 ### Step 11
 
 In the next example only the HTML will change
-<details>
+
 
 ```html
 
@@ -1230,13 +1230,13 @@ In the next example only the HTML will change
 
 ```
 
-</details>
+
 
 ### Step 12
 
 Now we add the CSS 
 
-<details>
+
 
 ```html
 
@@ -1510,12 +1510,12 @@ Now we add the CSS
 
 ```
 
-</details>
+
 
 ### Step 13
 And now the Javascript necessary to make the Pomodoro counter work.
 
-<details>
+
 
 ```html
 <!DOCTYPE html>
@@ -1875,7 +1875,7 @@ And now the Javascript necessary to make the Pomodoro counter work.
 
 ```
 
-</details>
+
 
 We now have over 300 lines of code written by ourselves!
 
