@@ -1,12 +1,25 @@
+#APP_ASISTENTE_ESTUDIOS_WEB_DEVELOPMENT_VERSION_2.0.BSv5
+
 Create three folders, name them "html, js, css".
 
-Inside directory named html, create file "index.html"
-Inside directory named js, create file "main.js"
-Inside directory named css, create file "style.css"
+- Inside directory named html, create file "index.html"
+- Inside directory named js, create file "main.js"
+- Inside directory named css, create file "style.css"
 
-At first we will write all the code inside "index.html", then progresively move it to other files.
+if you want you could have you page on the internet. check in google "how to host html in google drive"
 
-Make use of https://text-compare.com/ and/or https://onlinetextcompare.com/html to check the differences between one step and thhe following.
+To host a web page on Google Drive:
+
+- Create a folder in Google Drive and set the sharing permission to “Public on the Web.”
+- Upload the HTML, JavaScript and CSS files for your web page to your new folder (only the files).
+- Select the HTML file, open it and click the “Preview” button in the toolbar.
+- Share the URL (it will look like www.googledrive.com/host/…) and anyone can view your web page!
+
+
+In this tutorial we will write all the code inside "index.html", then is you job to progresively move it to other files (if you want).
+
+To not load you up with a lot of "information"
+Make use of https://text-compare.com/ and/or https://onlinetextcompare.com/html to check the differences between one step and the following.
 
 When comparing the code make sure to "iterate" at least 2 times. 
 
@@ -16,7 +29,7 @@ When comparing the code make sure to "iterate" at least 2 times.
 Keys for completing this tutorial:
 
 - Compare the code you write with the examples provided.
-- Research what you don't understand. But don't let "not knowing" be an obstacle for writting the code provided.
+- Research what you don't understand. But don't let "not knowing" be an obstacle for writing the code provided.
 - Mind your keystrokes when transcribing. (type what you read, not what you "think" you read)
 - Type the code by yourself (you can copy it and paste it, but imagine the next examples as "pictures" of how the file should look like after each new addition)
 
@@ -67,8 +80,8 @@ As we will focus on learning Bootstrap, then let's include the CDNs for Bootstra
 
 
 ```
-Now, for the next step, we will create our "Navigation bar". 
-We will include links to google search, google calendar, also placeholder links for other features of our web page.
+For the next step, we will create our "Navigation bar". 
+We will include links to google search, google calendar, also placeholder links "#" for other features of our web page.
 Notice the use of semantic HTML, other good practices are to include unique "id" attributes for each element inside <body>
 
 
@@ -311,7 +324,7 @@ Then, find the text "Online PDF editor" inside of anchor tag, we will link to an
 
 We need to "connect" our links in the nav bar to our accordion, therefore we must do the following changes to the code:
 
-Note that we're basically making use of attributes like `data-bs-toggle, data-bs-target, aria-expanded, aria-controls`, maybe intead of understanding what those are, check where are they being used in the code. (compare where they where being used before in the previous steps, and where are they being used now)
+Note that we're basically making use of attributes like `data-bs-toggle, data-bs-target, aria-expanded, aria-controls`, maybe intead of understanding what each of those are, check where are they being used in the code. (compare where they where being used before in the previous steps, and where are they being used now)
 
 ```html
 
@@ -755,7 +768,7 @@ Compare your code with the following and update accordingly.
 
 
 
-- We will show the "objetivos" once one has been created. Note that we are also adding some JavaScript for creating the element and for adding an "Event Listener" to each newly created "objetivo" to deletet it, later we will make it better, and add functionality for editing each "objetivo", etc
+- We will show the "objetivos" once one has been created. Note that we are also adding some JavaScript for creating the element and for adding an "Event Listener" to each newly created "objetivo" to delete it, later we will make it better, and add functionality for editing each "objetivo", etc
 
 Compare your code with the following and update accordingly.
 
@@ -940,12 +953,12 @@ Compare your code with the following and update accordingly.
 ``` 
 ---
 
-Now we will introduce a bigger chunk ofJavascript. Is recommended but not required, to have read  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics_started_with_the_web
+Now we will introduce a bigger chunk of Javascript. Is recommended but not required, to have read  https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics_started_with_the_web
 
 
 As stated before we will include at first everything inside our index.html file.
 
-Now take break again. Use you web a little bit an try to connect how everything is working.
+Now take break again. Use you web a little bit an try to connect in your mind how what you have written is working.
 
 Investigate what is the "Pomodoro technique".
 
@@ -1800,4 +1813,6 @@ We will consider this tutorial as completed.
 
 There's still some work to do on the App, but I would recommend that you first implement the App in to your learning process (you as an user) and find out what it needs to be done and where.
 
-The first task I would recommend is to "extract" and "refactor" all the CSS and Javascript to the files mentioned at the begining. (after refactoring the app should be running)
+The first task I would recommend is to "extract" and "refactor" all the CSS and Javascript to the files mentioned at the begining. (after refactoring the app should be running ;D )
+
+
