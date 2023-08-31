@@ -220,6 +220,7 @@ In this way we can offer a variety of resources, that handle the writing and tak
 Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML Notepad", are better suited to be displayed together but without interfering with one another, so we will append and an "Accordion" that help us with having our three features handy.
 
 ---
+
 <detils>
 
 ```html
