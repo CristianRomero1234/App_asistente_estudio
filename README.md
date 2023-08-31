@@ -4,7 +4,6 @@ The finished product of this tutorial can be seen at:
 https://cristianromero1234.github.io/App_asistente_estudio/html/index.html
 
 
-
 - Create HTML file named "index.html"
 
 if you want you could have you page on the internet. check in google "how to host html in google drive"
