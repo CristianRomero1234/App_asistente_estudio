@@ -326,7 +326,7 @@ Now, features as "Pomodoro counter", "Lista de Objetivos" and "Your Custom HTML 
 
 At this point we have the basic structure of our web page that so far only makes use of HTML and Bootstrap v5.3.1,
 
-But we also know the is just a scaffold, and we're set for few more hours of work and learning.
+But we also know that this is just a scaffold, and we're set for few more hours of work and learning.
 
 Stop at this point. 
 
@@ -351,7 +351,7 @@ First, find the text "Google Docs" inside of anchor tag, we will link to google 
 
 ### Step 6
 
-Then, find the text "Online PDF editor" inside of anchor tag, we will link to an online pdf editor in our case: https://openpdf.com/lp/edit-pdf.html
+Then, find the text "Online PDF editor" inside of anchor tag, we will link it to an online pdf editor in our case: https://openpdf.com/lp/edit-pdf.html
 
 (search for "Online PDF editor" anchor tag anchor tag in you file index.html and add the href attribute pointing to "https://openpdf.com/lp/edit-pdf.html")
 
