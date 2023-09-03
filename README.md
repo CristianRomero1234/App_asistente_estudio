@@ -1,12 +1,12 @@
 # APP_ASISTENTE_ESTUDIOS_WEB_DEVELOPMENT_VERSION_2.0.BSv5
 
 The finished product of this tutorial can be seen at:
-https://cristianromero1234.github.io/App_asistente_estudio/html/index.html
+[Published Site](https://cristianromero1234.github.io/App_asistente_estudio/html/index.html)
 
 
-- Create HTML file named "index.html"
+- Create a new HTML file named "index.html"
 
-if you want you could have you page on the internet. check in google "how to host html in google drive"
+if you want you could have your page on the internet. Check in google "how to host html in google drive"
 
 To host a web page on Google Drive:
 
@@ -16,15 +16,15 @@ To host a web page on Google Drive:
 - Share the URL (it will look like www.googledrive.com/host/…) and anyone can view your web page!
 
 
-In this tutorial we will write all the code inside "index.html", then is you job to progresively move it to other files (if you want).
+In this tutorial we will write all the code inside "index.html", then is your job to progresively move it to other files (if you want).
 
 To not load you up with a lot of "information"
-Make use of https://text-compare.com/ and/or https://onlinetextcompare.com/html to check the differences between one step and the following.
+Make use of [Plain Text Compare](https://text-compare.com) and/or [HTML Code Compare](https://onlinetextcompare.com/html) to check the differences between one step and the following.
 
 When comparing the code make sure to "iterate" at least 2 times. 
 
-1.  compare your current code to the code provided on each step.
-2.  compare the differences and make sure you understand before writing the new code to your program.
+1.  Compare your current code to the code provided on each step.
+2.  Compare the differences and make sure you understand before writing the new code to your program.
 
 Keys for completing this tutorial:
 
