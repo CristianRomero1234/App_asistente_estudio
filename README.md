@@ -1889,9 +1889,9 @@ There's still some work to do on the App, but I would recommend that you first i
 
 The first task I would recommend is to "extract" and "refactor" all the CSS and Javascript to the files mentioned at the begining. (after refactoring the app should be running ;D )
 
-This tutorial is avialable at https://cristianromero1234.github.io/App_asistente_estudio/
+This tutorial is avialable at [Github repository](https://cristianromero1234.github.io/App_asistente_estudio/)
 
 and the finished product of this tutorial can be seen at:
-https://cristianromero1234.github.io/App_asistente_estudio/html/index.html
+[Published Site](https://cristianromero1234.github.io/App_asistente_estudio/html/index.html)
 
 
