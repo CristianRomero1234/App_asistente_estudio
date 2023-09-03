@@ -2,6 +2,8 @@
 
 The finished product of this tutorial can be seen at:
 [Published Site](https://cristianromero1234.github.io/App_asistente_estudio/html/index.html)
+[W3Schools Bootstrap 5 tutorial](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php)
+[Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 
 - Create a new HTML file named "index.html"
